@@ -168,11 +168,7 @@ body {
 
 .circle.blue {
   background:
-    radial-gradient(
-      circle at top left,
-      #d8fffa,
-      #6cc7b7
-    );
+    radial-gradient(circle at top left, #d8fffa, #6cc7b7);
 
   box-shadow:
     0 0 15px rgba(140, 255, 235, 0.35);
@@ -180,11 +176,7 @@ body {
 
 .circle.red {
   background:
-    radial-gradient(
-      circle at top left,
-      #ffb3b3,
-      #c44b4b
-    );
+    radial-gradient(circle at top left, #ffb3b3, #c44b4b);
 }
 
 .roblox-avatar {
@@ -234,15 +226,8 @@ body {
   inset: 0;
 
   background:
-    linear-gradient(
-      rgba(255,255,255,0.05) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(255,255,255,0.05) 1px,
-      transparent 1px
-    );
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
 
   background-size: 35px 35px;
 
@@ -250,6 +235,48 @@ body {
   pointer-events: none;
 }
 
+/* ===== MUSIC BANNER SECTION ===== */
+
+.extra-image {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.song-banner {
+  width: 100%;
+  max-width: 900px;
+  height: 95px;
+
+  object-fit: cover;
+
+  border: 2px solid #6fa59d;
+
+  box-shadow:
+    0 0 18px rgba(120, 220, 205, 0.12);
+
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+/* glowing “now playing” effect */
+@keyframes pulseGlow {
+  0% {
+    filter: brightness(0.9);
+    box-shadow: 0 0 10px rgba(120, 220, 205, 0.08);
+  }
+  50% {
+    filter: brightness(1.05);
+    box-shadow: 0 0 22px rgba(120, 220, 205, 0.18);
+  }
+  100% {
+    filter: brightness(0.9);
+    box-shadow: 0 0 10px rgba(120, 220, 205, 0.08);
+  }
+}
+
+/* bottom line */
 .bottom-line {
   width: 100%;
   height: 2px;
