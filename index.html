@@ -9,7 +9,7 @@
 
 <body>
 
-  <!-- Background Music (FIXED) -->
+  <!-- Background Music (browser-safe autoplay fix) -->
   <audio id="bg-music" loop>
     <source src="music.mp3" type="audio/mpeg">
   </audio>
@@ -70,9 +70,14 @@
 
       </div>
 
-      <!-- NOW PLAYING IMAGE -->
+      <!-- NEW IMAGE (182x277) -->
+      <div class="small-art">
+        <img src="your-new-image.png" alt="Artwork">
+      </div>
+
+      <!-- MUSIC BANNER -->
       <div class="extra-image">
-        <img class="song-banner" src="foild.png" alt="Song Image">
+        <img class="song-banner" src="foild.png" alt="Now Playing">
       </div>
 
       <div class="bottom-line"></div>
