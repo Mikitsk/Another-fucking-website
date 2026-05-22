@@ -5,11 +5,9 @@ box-sizing:border-box;
 }
 
 body{
-
 font-family:"Courier New", monospace;
 
-background:
-linear-gradient(
+background:linear-gradient(
 135deg,
 #07100f,
 #0d1716,
@@ -18,96 +16,86 @@ linear-gradient(
 
 color:white;
 min-height:100vh;
-padding:40px 20px;
-
+padding:25px;
 }
 
 
 /* MAIN CONTAINER */
 
 .container{
-
-max-width:1100px;
+max-width:1000px;
 margin:auto;
-padding:40px;
+padding:30px;
 
 border-radius:20px;
 
-background:
-rgba(10,15,15,.90);
+background:rgba(10,15,15,.92);
 
-border:
-1px solid rgba(130,255,230,.12);
+border:1px solid rgba(130,255,230,.12);
 
 box-shadow:
 0 0 50px rgba(120,255,220,.05);
-
 }
 
 
-/* TOP */
+/* HERO */
 
 .hero{
-
 display:grid;
-
-grid-template-columns:
-1fr 280px;
-
-gap:50px;
+grid-template-columns:1fr 260px;
+gap:35px;
 
 align-items:center;
 
-margin-bottom:50px;
-
+margin-bottom:30px;
 }
 
+
+/* TITLE */
 
 h1{
-
-font-size:4rem;
+font-size:3.5rem;
 letter-spacing:5px;
-margin-bottom:30px;
-color:#e7fff9;
 
+margin-bottom:25px;
+
+color:#e7fff9;
 }
 
+
+/* INTRO */
 
 .intro{
 
-padding:18px;
+padding:16px;
 
 line-height:1.6;
 
 border-radius:12px;
 
-background:
-rgba(255,255,255,.02);
+background:rgba(255,255,255,.02);
 
 border:
 1px solid rgba(130,255,230,.1);
 
-margin-bottom:30px;
-
+margin-bottom:25px;
 }
 
 
-/* CARDS */
+/* SOCIALS */
 
 .socials{
-
 display:flex;
-gap:20px;
+gap:15px;
 flex-wrap:wrap;
-
 }
 
 
 .card{
 
-width:210px;
+width:200px;
 
-padding:20px;
+padding:18px;
 
 border-radius:15px;
 
@@ -115,10 +103,9 @@ background:
 rgba(255,255,255,.02);
 
 border:
-1px solid rgba(130,255,230,.10);
+1px solid rgba(130,255,230,.1);
 
-transition:.35s;
-
+transition:.3s;
 }
 
 .card:hover{
@@ -127,18 +114,15 @@ transform:translateY(-5px);
 
 border-color:
 rgba(130,255,230,.5);
-
 }
 
 
 .roblox-card{
-
 text-decoration:none;
 color:white;
 display:block;
-cursor:pointer;
-
 }
+
 
 .roblox-card:hover{
 
@@ -147,14 +131,16 @@ box-shadow:
 
 border-color:
 rgba(255,90,90,.5);
-
 }
 
+
+/* LABELS */
 
 .label{
 
 display:flex;
 align-items:center;
+
 gap:8px;
 
 margin-bottom:15px;
@@ -166,16 +152,14 @@ letter-spacing:2px;
 text-transform:uppercase;
 
 color:#90dbc8;
-
 }
-
 
 .user{
 
 display:flex;
 align-items:center;
-gap:10px;
 
+gap:10px;
 }
 
 
@@ -183,8 +167,8 @@ gap:10px;
 
 width:12px;
 height:12px;
-border-radius:50%;
 
+border-radius:50%;
 }
 
 .blue{
@@ -195,6 +179,7 @@ background:#6be4ff;
 background:#ff5d5d;
 }
 
+
 .avatar{
 
 width:28px;
@@ -204,15 +189,14 @@ border-radius:50%;
 
 border:
 2px solid rgba(255,255,255,.2);
-
 }
 
 
-/* PROFILE IMAGE */
+/* PROFILE */
 
 .profile{
 
-height:300px;
+height:280px;
 
 overflow:hidden;
 
@@ -220,7 +204,6 @@ border-radius:18px;
 
 border:
 1px solid rgba(130,255,230,.12);
-
 }
 
 .profile img{
@@ -233,7 +216,6 @@ object-fit:cover;
 filter:
 brightness(.85)
 contrast(1.1);
-
 }
 
 
@@ -241,9 +223,9 @@ contrast(1.1);
 
 .server-section{
 
-margin-top:35px;
+margin-top:25px;
 
-padding:30px;
+padding:25px;
 
 border-radius:16px;
 
@@ -252,7 +234,6 @@ rgba(255,255,255,.02);
 
 border:
 1px solid rgba(130,255,230,.1);
-
 }
 
 h2{
@@ -266,12 +247,11 @@ margin-bottom:20px;
 color:#99e7d4;
 
 text-transform:uppercase;
-
 }
 
 .server-box{
 
-padding:20px;
+padding:18px;
 
 border-radius:12px;
 
@@ -283,20 +263,16 @@ border:
 
 display:flex;
 flex-direction:column;
-gap:15px;
-
+gap:12px;
 }
 
 .server-box a{
 
 color:#73e6ff;
 
-font-size:1.1rem;
-
 text-decoration:none;
 
 transition:.3s;
-
 }
 
 .server-box a:hover{
@@ -305,7 +281,6 @@ color:white;
 
 text-shadow:
 0 0 15px rgba(115,230,255,.8);
-
 }
 
 
@@ -313,9 +288,12 @@ text-shadow:
 
 .gif-section{
 
-margin-top:35px;
+margin-top:25px;
 
-padding:25px;
+display:flex;
+justify-content:center;
+
+padding:12px;
 
 border-radius:16px;
 
@@ -325,13 +303,22 @@ rgba(255,255,255,.02);
 border:
 1px solid rgba(130,255,230,.1);
 
-overflow:hidden;
+max-width:500px;
 
+margin-left:auto;
+margin-right:auto;
 }
+
 
 .aizen-gif{
 
 width:100%;
+
+max-width:420px;
+
+/* important: keeps full GIF visible */
+height:auto;
+
 display:block;
 
 border-radius:12px;
@@ -340,14 +327,12 @@ filter:
 brightness(.9)
 contrast(1.1);
 
-transition:.4s;
-
+transition:.3s;
 }
 
 .aizen-gif:hover{
 
-transform:scale(1.02);
-
+transform:scale(1.03);
 }
 
 
@@ -356,32 +341,30 @@ transform:scale(1.02);
 @media(max-width:850px){
 
 .hero{
-
 grid-template-columns:1fr;
-
 text-align:center;
-
 }
 
 .socials{
-
 justify-content:center;
-
 }
 
 .profile{
-
-width:260px;
-height:260px;
-
+width:240px;
+height:240px;
 margin:auto;
-
 }
 
 h1{
+font-size:2.8rem;
+}
 
-font-size:3rem;
+.gif-section{
+max-width:100%;
+}
 
+.aizen-gif{
+max-width:100%;
 }
 
 }
