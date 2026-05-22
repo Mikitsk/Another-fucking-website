@@ -6,29 +6,28 @@ box-sizing:border-box;
 
 body{
 
-font-family:'Outfit',sans-serif;
+font-family:'Cormorant Garamond',serif;
 
 background:
 linear-gradient(
 135deg,
-#040308 0%,
-#0b0815 25%,
-#1a1230 65%,
-#37225d 100%
+#05030b 0%,
+#090512 25%,
+#160d27 60%,
+#2b1848 100%
 );
 
-color:#f7f4ff;
+color:#f8f5ff;
 
 min-height:100vh;
 
-padding:25px;
+padding:30px;
 
 overflow-x:hidden;
-
 }
 
 
-/* CONTAINER */
+/* MAIN CONTAINER */
 
 .container{
 
@@ -36,34 +35,34 @@ max-width:1050px;
 
 margin:auto;
 
-padding:35px;
+padding:40px;
 
 border-radius:30px;
 
 background:
-rgba(10,8,20,.82);
+rgba(10,8,18,.85);
 
 backdrop-filter:blur(20px);
 
 border:
-1px solid rgba(185,140,255,.12);
+1px solid rgba(180,120,255,.1);
 
 box-shadow:
-0 0 50px rgba(150,80,255,.15);
+0 0 60px rgba(130,50,255,.18);
 
 }
 
 
-/* HERO */
+/* TOP */
 
 .hero{
 
 display:grid;
 
 grid-template-columns:
-1fr 260px;
+1fr 280px;
 
-gap:35px;
+gap:40px;
 
 align-items:center;
 
@@ -76,53 +75,52 @@ margin-bottom:30px;
 
 h1{
 
-font-family:'Cinzel',serif;
+font-family:'UnifrakturCook',cursive;
 
-font-size:4rem;
+font-size:5rem;
 
-font-weight:800;
+font-weight:700;
 
-letter-spacing:10px;
+letter-spacing:3px;
 
 margin-bottom:25px;
 
 color:white;
 
 text-shadow:
-0 0 20px rgba(210,140,255,.5);
+0 0 25px rgba(200,130,255,.4);
 
 }
 
 
-/* INTRO BOX */
+/* INTRO */
 
 .intro{
 
-padding:18px;
+padding:20px;
 
-line-height:1.8;
+line-height:1.7;
+
+font-size:1.1rem;
 
 border-radius:18px;
-
-margin-bottom:25px;
 
 background:
 rgba(255,255,255,.03);
 
 border:
-1px solid rgba(185,140,255,.08);
+1px solid rgba(180,120,255,.08);
 
-box-shadow:
-inset 0 0 20px rgba(255,255,255,.02);
-
-color:#ddd7f6;
+color:#e1d9ff;
 
 }
 
 
-/* SOCIALS */
+/* SOCIAL CARDS */
 
 .socials{
+
+margin-top:25px;
 
 display:flex;
 
@@ -132,8 +130,6 @@ flex-wrap:wrap;
 
 }
 
-
-/* CARDS */
 
 .card{
 
@@ -151,13 +147,13 @@ background:
 rgba(255,255,255,.03);
 
 border:
-1px solid rgba(185,140,255,.08);
+1px solid rgba(180,120,255,.08);
 
-transition:.35s;
-
-overflow:hidden;
+transition:.4s;
 
 position:relative;
+
+overflow:hidden;
 
 }
 
@@ -167,28 +163,28 @@ content:"";
 
 position:absolute;
 
-left:0;
-top:0;
-
 width:100%;
 height:100%;
+
+top:0;
+left:-100%;
 
 background:
 linear-gradient(
 90deg,
 transparent,
-rgba(255,255,255,.04),
+rgba(255,255,255,.06),
 transparent
 );
 
-transform:translateX(-100%);
-
 transition:.6s;
+
 }
 
 .card:hover::before{
 
-transform:translateX(100%);
+left:100%;
+
 }
 
 .card:hover{
@@ -196,36 +192,16 @@ transform:translateX(100%);
 transform:
 translateY(-6px);
 
+box-shadow:
+0 0 30px rgba(180,80,255,.2);
+
 border-color:
-rgba(220,180,255,.25);
-
-box-shadow:
-0 0 25px rgba(160,80,255,.15);
+rgba(200,150,255,.2);
 
 }
 
 
-/* ROBLOX HOVER */
-
-.roblox-card:hover{
-
-box-shadow:
-0 0 25px rgba(255,80,150,.25);
-
-}
-
-
-/* SERVER HOVER */
-
-.server-card:hover{
-
-box-shadow:
-0 0 25px rgba(180,0,255,.35);
-
-}
-
-
-/* LABELS */
+/* LABEL */
 
 .label{
 
@@ -243,9 +219,10 @@ letter-spacing:3px;
 
 text-transform:uppercase;
 
-color:#d9b2ff;
+color:#d7b0ff;
 
 }
+
 
 .user{
 
@@ -255,7 +232,7 @@ align-items:center;
 
 gap:10px;
 
-font-size:.95rem;
+font-size:1rem;
 
 }
 
@@ -273,33 +250,33 @@ border-radius:50%;
 
 .blue{
 
-background:#7f8cff;
+background:#7c8cff;
 
 box-shadow:
-0 0 12px #7f8cff;
+0 0 10px #7c8cff;
 
 }
 
 .red{
 
-background:#ff5f95;
+background:#ff5e8c;
 
 box-shadow:
-0 0 12px #ff5f95;
+0 0 10px #ff5e8c;
 
 }
 
 .purple{
 
-background:#cb38ff;
+background:#ca2eff;
 
 box-shadow:
-0 0 12px #cb38ff;
+0 0 10px #ca2eff;
 
 }
 
 
-/* ROBLOX AVATAR */
+/* ROBLOX PFP */
 
 .avatar{
 
@@ -309,26 +286,26 @@ height:28px;
 border-radius:50%;
 
 border:
-2px solid rgba(255,255,255,.15);
+2px solid rgba(255,255,255,.2);
 
 }
 
 
-/* RIGHT PROFILE */
+/* RIGHT GIF */
 
 .profile{
 
-height:280px;
+height:300px;
 
 overflow:hidden;
 
 border-radius:22px;
 
 border:
-1px solid rgba(185,140,255,.12);
+1px solid rgba(180,120,255,.08);
 
 box-shadow:
-0 0 30px rgba(160,80,255,.1);
+0 0 35px rgba(150,80,255,.15);
 
 }
 
@@ -345,7 +322,7 @@ transition:.5s;
 
 .profile:hover img{
 
-transform:scale(1.05);
+transform:scale(1.04);
 
 }
 
@@ -364,7 +341,7 @@ background:
 rgba(255,255,255,.03);
 
 border:
-1px solid rgba(185,140,255,.08);
+1px solid rgba(180,120,255,.08);
 
 display:flex;
 
@@ -379,8 +356,6 @@ overflow:hidden;
 width:100%;
 
 max-width:900px;
-
-height:auto;
 
 border-radius:18px;
 
@@ -424,9 +399,7 @@ margin:auto;
 
 h1{
 
-font-size:2.8rem;
-
-letter-spacing:6px;
+font-size:3rem;
 
 }
 
