@@ -2,9 +2,9 @@
 
 .gif-section{
 
-margin-top:30px;
+margin-top:25px;
 
-padding:18px;
+padding:15px;
 
 border-radius:22px;
 
@@ -17,7 +17,6 @@ border:
 display:flex;
 
 justify-content:center;
-
 align-items:center;
 
 overflow:hidden;
@@ -25,16 +24,16 @@ overflow:hidden;
 }
 
 
-/* BIGGER / TALLER GIF */
+/* TALLER GIF */
 
 .aizen-gif{
 
 width:100%;
 
-max-width:950px;
+max-width:900px;
 
-/* much taller now */
-max-height:700px;
+/* increased from 380px */
+max-height:500px;
 
 height:auto;
 
