@@ -11,23 +11,25 @@ body{
 
     background:linear-gradient(
         -45deg,
-        #8a63d2,
-        #7ec8ff,
-        #ff4fd8,
-        #4a6edb,
-        #caa6ff
+        #000000,
+        #151515,
+        #2d2d2d,
+        #555555,
+        #e5e5e5,
+        #444444,
+        #111111
     );
 
     background-size:400% 400%;
 
-    animation:gradientFlow 15s ease infinite;
+    animation:ambientFade 18s ease infinite;
 
 }
 
 
-/* animated background */
+/* Smooth ambient movement */
 
-@keyframes gradientFlow{
+@keyframes ambientFade{
 
     0%{
         background-position:0% 50%;
@@ -82,7 +84,7 @@ body{
 }
 
 
-/* Title */
+/* Top title */
 
 .title{
 
@@ -93,6 +95,9 @@ body{
     margin-top:40px;
 
     color:white;
+
+    text-shadow:
+    0px 0px 8px rgba(255,255,255,.3);
 
 }
 
@@ -119,6 +124,9 @@ body{
     color:white;
 
     z-index:2;
+
+    text-shadow:
+    0px 0px 5px rgba(255,255,255,.2);
 
 }
 
