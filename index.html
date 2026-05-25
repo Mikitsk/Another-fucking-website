@@ -1,206 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>About Me</title>
 
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
-<!-- MUSIC PLAYER -->
-
-<audio id="bg-music"></audio>
-
-<script>
-
-const music = document.getElementById("bg-music");
-
-const playlist = [
-
-"music1.mp3",
-"music2.mp3",
-"music3.mp3",
-"music4.mp3",
-"music5.mp3"
-
-];
-
-let currentSong = 0;
-
-
-/* Load first song */
-
-music.src = playlist[currentSong];
-
-
-/* Browser requires click before audio */
-
-window.addEventListener("click",()=>{
-
-music.play();
-
-},{once:true});
-
-
-/* Switch songs automatically */
-
-music.addEventListener("ended",()=>{
-
-currentSong++;
-
-
-/* Restart playlist after last song */
-
-if(currentSong >= playlist.length){
-
-currentSong = 0;
-
-}
-
-music.src = playlist[currentSong];
-
-music.play();
-
-});
-
-</script>
-
-
-
 <div class="container">
 
-<div class="hero">
+    <div class="left">
 
-<div class="left-side">
+        <div class="social-icons">
 
-<h1>welcome</h1>
+            <a href="#"><img src="github.png"></a>
+            <a href="#"><img src="discord.png"></a>
+            <a href="#"><img src="youtube.png"></a>
 
+        </div>
 
-<div class="intro">
+        <p class="tags">
+            agnostic, autistic, adhd, linux, programmer
+        </p>
 
-You clicking my website was all according to plan.
+        <div class="badges">
 
-</div>
+            <img src="badge1.gif">
+            <img src="badge2.gif">
+            <img src="badge3.gif">
+            <img src="badge4.gif">
+            <img src="badge5.gif">
+            <img src="badge6.gif">
 
+        </div>
 
-
-<div class="socials">
-
-<!-- Discord -->
-
-<div class="card">
-
-<div class="label">
-
-<span class="circle blue"></span>
-
-Discord
-
-</div>
-
-<div class="user">
-
-FullyShatteredComet
-
-</div>
-
-</div>
+    </div>
 
 
+    <div class="right">
 
-<!-- Roblox -->
+        <h1>pawesome about me\</h1>
 
-<a
-href="https://www.roblox.com/users/7536569678/profile"
-target="_blank"
-class="card roblox-card">
+        <p>
+            hii i am Mashood, i'm learning web development and programming.
+        </p>
 
-<div class="label">
+        <br>
 
-<span class="circle red"></span>
+        <p>
+            My favorite languages are
+            <b>python</b>,
+            <b>javascript</b>,
+            and <b>lua</b>.
+        </p>
 
-Roblox
-
-</div>
-
-<div class="user">
-
-<img
-class="avatar"
-src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-2682F4FCAA1242C17E11BE361D5697D4-Png/150/150/AvatarHeadshot/Webp/noFilter">
-
-okula9990
-
-</div>
-
-</a>
-
-
-
-<!-- Server -->
-
-<a
-href="https://discord.gg/59BdrZxWgW"
-target="_blank"
-class="card server-card">
-
-<div class="label">
-
-<span class="circle purple"></span>
-
-Server
-
-</div>
-
-<div class="user">
-
-Join my expose server
-
-</div>
-
-</a>
-
-</div>
-
-</div>
-
-
-
-<!-- RIGHT SIDE GIF -->
-
-<div class="profile">
-
-<img src="download.gif" alt="Profile GIF">
-
-</div>
-
-</div>
-
-
-
-<!-- BOTTOM GIF -->
-
-<div class="gif-section">
-
-<img
-src="aizen.gif"
-class="aizen-gif"
-alt="Aizen GIF">
-
-</div>
+    </div>
 
 </div>
 
 </body>
-
 </html>
