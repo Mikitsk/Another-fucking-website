@@ -1,11 +1,4 @@
-html,
-body,
-a,
-img,
-div,
-p,
-h1,
-h2 {
+html, body, a, img, div, p, h1, h2 {
 cursor: url("cursor.png") 16 16, auto;
 }
 
@@ -26,14 +19,12 @@ overflow-x: hidden;
 font-family: 'IBM Plex Mono', monospace;
 background: #000;
 color: white;
-position: relative;
 }
 
-/* pixel bg */
+/* background grid */
 .pixel-bg {
 position: fixed;
 inset: 0;
-z-index: 0;
 opacity: .25;
 pointer-events: none;
 background-image:
@@ -43,8 +34,7 @@ background-size: 18px 18px;
 }
 
 /* manga sides */
-.manga-left,
-.manga-right {
+.manga-left, .manga-right {
 position: fixed;
 top: 0;
 width: 24vw;
@@ -68,8 +58,8 @@ mask-image: linear-gradient(to left, black 65%, transparent);
 .title {
 position: relative;
 z-index: 5;
-margin-top: 40px;
 text-align: center;
+margin-top: 40px;
 font-size: 60px;
 text-shadow: 0 0 10px white, 0 0 30px rgba(255,255,255,.3);
 }
@@ -92,7 +82,7 @@ flex-direction: column;
 gap: 25px;
 }
 
-/* default images */
+/* normal images */
 .misa-column img {
 width: 160px;
 border-radius: 10px;
@@ -104,9 +94,10 @@ box-shadow: 0 0 8px rgba(255,255,255,.1);
 box-shadow: 0 0 15px white, 0 0 35px rgba(255,255,255,.3);
 }
 
-/* 🔥 BIG GIF ONLY */
+/* 🔥 BIG GIF */
 .gif-large {
-width: 280px;
+width: 520px;
+border-radius: 12px;
 }
 
 /* about box */
@@ -150,7 +141,7 @@ transition: .3s;
 filter: drop-shadow(0 0 10px white);
 }
 
-/* scroll */
+/* scroll text */
 .scroll-down {
 text-align: center;
 margin: 50px 0 250px;
@@ -199,7 +190,7 @@ height: 8px;
 border-radius: 50%;
 background: white;
 pointer-events: none;
-z-index: 99999;
+z-index: 9999;
 transform: translate(-50%, -50%);
 animation: fade .6s linear forwards;
 box-shadow: 0 0 10px white;
@@ -212,6 +203,7 @@ box-shadow: 0 0 10px white;
 
 /* mobile */
 @media (max-width: 900px) {
+
 .container {
 flex-direction: column;
 gap: 35px;
@@ -228,11 +220,10 @@ width: 120px;
 }
 
 .gif-large {
-width: 200px;
+width: 300px;
 }
 
-.manga-left,
-.manga-right {
+.manga-left, .manga-right {
 display: none;
 }
 
