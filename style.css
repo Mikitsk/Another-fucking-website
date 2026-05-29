@@ -1,4 +1,3 @@
-```css
 /* made by mashood */
 
 html,
@@ -37,12 +36,7 @@ overflow-x:hidden;
 
 font-family:'IBM Plex Mono', monospace;
 
-/* FIXED GIF BACKGROUND */
-background-image:url("background.gif");
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-background-attachment:fixed;
+background:#000000;
 
 color:white;
 
@@ -67,8 +61,7 @@ z-index:0;
 
 pointer-events:none;
 
-/* LOWERED SO GIF IS VISIBLE */
-opacity:.08;
+opacity:.25;
 
 background-image:
 
@@ -343,7 +336,7 @@ drop-shadow(
 }
 
 
-/* scroll indicator */
+/* scroll indicator (NO MOVEMENT) */
 
 .scroll-down{
 
@@ -550,4 +543,3 @@ width:90%;
 }
 
 }
-```
